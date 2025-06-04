@@ -1,0 +1,111 @@
+
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/jetbrains-mono/400.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 44 47 54;
+    --foreground: 249 250 251;
+
+    --card: 44 47 54;
+    --card-foreground: 249 250 251;
+
+    --popover: 44 47 54;
+    --popover-foreground: 249 250 251;
+
+    --primary: 51 102 255;
+    --primary-foreground: 249 250 251;
+
+    --secondary: 75 85 99;
+    --secondary-foreground: 249 250 251;
+
+    --muted: 75 85 99;
+    --muted-foreground: 156 163 175;
+
+    --accent: 0 194 168;
+    --accent-foreground: 249 250 251;
+
+    --destructive: 255 59 48;
+    --destructive-foreground: 249 250 251;
+
+    --border: 75 85 99;
+    --input: 75 85 99;
+    --ring: 51 102 255;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 44 47 54;
+    --sidebar-foreground: 249 250 251;
+    --sidebar-primary: 51 102 255;
+    --sidebar-primary-foreground: 249 250 251;
+    --sidebar-accent: 75 85 99;
+    --sidebar-accent-foreground: 249 250 251;
+    --sidebar-border: 75 85 99;
+    --sidebar-ring: 51 102 255;
+  }
+
+  .dark {
+    --background: 44 47 54;
+    --foreground: 249 250 251;
+
+    --card: 44 47 54;
+    --card-foreground: 249 250 251;
+
+    --popover: 44 47 54;
+    --popover-foreground: 249 250 251;
+
+    --primary: 51 102 255;
+    --primary-foreground: 249 250 251;
+
+    --secondary: 75 85 99;
+    --secondary-foreground: 249 250 251;
+
+    --muted: 75 85 99;
+    --muted-foreground: 156 163 175;
+
+    --accent: 0 194 168;
+    --accent-foreground: 249 250 251;
+
+    --destructive: 255 59 48;
+    --destructive-foreground: 249 250 251;
+
+    --border: 75 85 99;
+    --input: 75 85 99;
+    --ring: 51 102 255;
+    --sidebar-background: 44 47 54;
+    --sidebar-foreground: 249 250 251;
+    --sidebar-primary: 51 102 255;
+    --sidebar-primary-foreground: 249 250 251;
+    --sidebar-accent: 75 85 99;
+    --sidebar-accent-foreground: 249 250 251;
+    --sidebar-border: 75 85 99;
+    --sidebar-ring: 51 102 255;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  .font-jetbrains {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+  }
+}
